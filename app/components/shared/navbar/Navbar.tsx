@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 right-0 navbar-background h-16 ${isOpen! ? "" : "drop-shadow-sm" }`}>
+            <nav className={`fixed top-0 left-0 right-0 z-50 navbar-background h-16 ${isOpen! ? "" : "drop-shadow-2xl" }`}>
                 <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
                     {/* LOGO */}
