@@ -7,8 +7,8 @@ import ScaleIcon from "../ScaleIcon/ScaleIcon";
 const SectionOne = () => {
     return (
         <div className="py-20 flex justify-center items-center text-center">
-            <div className="w-full max-w-7xl mx-auto px-10 border">
-                <div className="w-full max-w-5xl mx-auto border">
+            <div className="w-full max-w-7xl mx-auto px-10">
+                <div className="w-full max-w-5xl mx-auto">
                     <SecondaryText 
                         text="Melayani pembelian dalam jumlah besar untuk manufaktur, F&B, dan distributor. Kualitas terstandar, siap kirim ke seluruh Indonesia."
                     />
@@ -21,7 +21,7 @@ const SectionOne = () => {
                         />
                         <MainText
                             text="Negosiasi Sekarang"
-                            extraClass="text-sm lg:text-lg"
+                            extraClass="text-sm lg:text-lg w-50"
                         />
                     </div>
                     <div className="flex flex-col items-center gap-y-10 py-12 rounded-2xl shadow-lg bg-[var(--secondary-green)] w-full max-w-2xs">
@@ -30,7 +30,7 @@ const SectionOne = () => {
                         />
                         <MainText
                             text="Supply Stabil & Konsisten"
-                            extraClass="text-sm lg:text-lg"
+                            extraClass="text-sm lg:text-lg w-full max-w-40"
                         />
                     </div>
                     <div className="flex flex-col items-center gap-y-10 py-12 rounded-2xl shadow-lg bg-[var(--secondary-green)] w-full max-w-2xs">
@@ -39,15 +39,15 @@ const SectionOne = () => {
                         />
                         <MainText
                             text="Harga Transparan & Kompetitif"
-                            extraClass="text-sm lg:text-lg"
+                            extraClass="text-sm lg:text-lg w-full max-w-50"
                         />
                     </div>
                 </div>
 
-                <div className="w-full max-w-6xl mx-auto bg-[var(--main-green)] rounded-full h-10 flex items-center justify-center">
+                <div className="w-full max-w-6xl mx-auto bg-[var(--main-green)] rounded-full py-3 flex items-center justify-center">
                     <SecondaryText
                         text="Cepat Sampai Bebas Worry (7 Hari Delivery)*"
-                        extraClass=""
+                        extraClass="!text-[color:var(--secondary-green)] !text-sm !md:text-md"
                     />
                 </div>
             </div>
