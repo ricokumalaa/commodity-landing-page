@@ -9,7 +9,7 @@ import UtensilsIcon from "../UtensilsIcon/UtensilsIcon";
 
 const SectionTwo = () => {
     return(
-        <div className="py-10 w-full max-w-7xl mx-auto px-10 md:px-30 flex flex-col justify-center items-center text-center">
+        <div className="pt-10 pb-20 w-full max-w-7xl mx-auto px-10 md:px-30 flex flex-col justify-center items-center text-center">
             <MainText
                 text="Partner Pasokan Kemiri Untuk Perusahaan"
                 extraClass="text-lg md:text-2xl mb-15"
