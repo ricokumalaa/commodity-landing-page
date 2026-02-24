@@ -1,8 +1,8 @@
 import MainText from "../../shared/MainText/MainText";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
-import HandshakeIcon from "../HandshakeIcon/HandshakeIcon";
-import RepeatIcon from "../RepeatIcon/RepeatIcon";
-import ScaleIcon from "../ScaleIcon/ScaleIcon";
+import HandshakeIcon from "../Icon/HandshakeIcon/HandshakeIcon";
+import RepeatIcon from "../Icon/RepeatIcon/RepeatIcon";
+import ScaleIcon from "../Icon/ScaleIcon/ScaleIcon";
 
 const SectionOne = () => {
     return (

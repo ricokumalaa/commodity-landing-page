@@ -1,11 +1,11 @@
 import MainText from "../../shared/MainText/MainText";
 import Divider from "../Divider/Divider";
-import FactoryIcon from "../FactoryIcon/FactoryIcon";
-import GlobeIcon from "../GlobeIcon/GlobeIcon";
-import PackageIcon from "../PackageIcon/PackageIcon";
+import FactoryIcon from "../Icon/FactoryIcon/FactoryIcon";
+import GlobeIcon from "../Icon/GlobeIcon/GlobeIcon";
+import PackageIcon from "../Icon/PackageIcon/PackageIcon";
 import SectionTwoCard from "../SectionTwoCard/SectionTwoCard";
-import TruckIcon from "../TruckIcon/TruckIcon";
-import UtensilsIcon from "../UtensilsIcon/UtensilsIcon";
+import TruckIcon from "../Icon/TruckIcon/TruckIcon";
+import UtensilsIcon from "../Icon/UtensilsIcon/UtensilsIcon";
 
 const SectionTwo = () => {
     return(
@@ -40,7 +40,7 @@ const SectionTwo = () => {
                 <SectionTwoCard
                     text="Hotel, Restoran, Catering (HORECA)"
                     icon={UtensilsIcon}
-                    extraclass="md:col-start-2"
+                    extraClass="md:col-start-2"
                 />
 
                 <Divider/>
@@ -48,7 +48,7 @@ const SectionTwo = () => {
                 <SectionTwoCard
                     text="Exporter / Trader"
                     icon={GlobeIcon}
-                    extraclass="md:col-start-4"
+                    extraClass="md:col-start-4"
                 />
             </div>
         </div>

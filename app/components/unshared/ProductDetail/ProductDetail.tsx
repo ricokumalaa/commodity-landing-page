@@ -2,11 +2,11 @@ import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 
 const ProductDetail = () => {
     return(
-        <div className="border text-center">
+        <div className="text-center">
             <SecondaryText
-                text="Sepsifikasi"
+                text="Spesifikasi"
             />
-            <ul className="list-disc">
+            <ul className="list-disc text-left text-[color:var(--secondary-text)]">
                 <li>
                     <SecondaryText
                         text="Origin: Nusa Tenggara Timur (NTT)"
