@@ -12,7 +12,7 @@ const SectionTwo = () => {
         <div className="pt-10 pb-20 w-full max-w-7xl mx-auto px-10 md:px-30 flex flex-col justify-center items-center text-center">
             <MainText
                 text="Partner Pasokan Kemiri Untuk Perusahaan"
-                extraClass="text-lg md:text-2xl mb-15"
+                extraClass="text-xl md:text-3xl mb-15"
             />
 
             <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-y-16 gap-x-20 text-center items-center">
