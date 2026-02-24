@@ -15,7 +15,7 @@ const HeroBanner = () => {
                     />
                 </div>
                 
-                <div>
+                <div className="px-5 md:px-0">
                     <SecondaryText
                         text="Kemiri Berkualitas untuk Kebutuhan Industri & Grosir"
                         extraClass="text-stone-100 max-w-xl mx-auto leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]"

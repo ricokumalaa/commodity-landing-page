@@ -4,7 +4,7 @@ import ProductDetail from "../ProductDetail/ProductDetail";
 
 const SectionThree = () => {
     return(
-        <div className="pt-10 pb-20 w-full max-w-7xl mx-auto px-10 flex flex-col justify-center items-center text-center gap-y-15">
+        <div className="pt-10 pb-20 w-full max-w-5xl mx-auto px-10 flex flex-col justify-center items-center text-center gap-y-15">
 
             <MainText
                 text="Produk Kami"

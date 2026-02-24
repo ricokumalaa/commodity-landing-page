@@ -5,12 +5,12 @@ import { execArgv } from "process";
 interface cardsProps{
     text: string;
     icon: React.ElementType;
-    extraclass?: string
+    extraClass?: string
 }
 
-const SectionTwoCard = ({ text, icon: Icon, extraclass="" }:cardsProps) => {
+const SectionTwoCard = ({ text, icon: Icon, extraClass="" }:cardsProps) => {
     return(
-        <div className={`flex flex-col items-center gap-12 ${extraclass}`}>
+        <div className={`flex flex-col items-center gap-12 ${extraClass}`}>
             <Icon
                 extraClass="h-10 w-10 lg:h-13 lg:w-13 text-[var(--main-green)]"
             />
