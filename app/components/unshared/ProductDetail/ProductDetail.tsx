@@ -14,12 +14,17 @@ const ProductDetail = () => {
                 </li>
                 <li>
                     <SecondaryText
-                        text="Packing: (25kg / 50kg / Custom)"
+                        text="Moisture: Dry"
                     />
                 </li>
                 <li>
                     <SecondaryText
                         text="Grade: Super"
+                    />
+                </li>
+                <li>
+                    <SecondaryText
+                        text="Packing: (25kg / 50kg / Custom)"
                     />
                 </li>
             </ul>
