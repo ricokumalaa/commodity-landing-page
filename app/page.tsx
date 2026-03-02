@@ -5,6 +5,7 @@ import SectionTwo from "./components/unshared/SectionTwo/SectionTwo";
 import SectionThree from "./components/unshared/SectionThree/SectionThree";
 import SectionFour from "./components/unshared/SectionFour/SectionFour";
 import SectionFive from "./components/unshared/SectionFive/SectionFive";
+import Footer from "./components/shared/Footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionThree/>
       <SectionFour/>
       <SectionFive/>
+      <Footer/>
     </>
   );
 }
