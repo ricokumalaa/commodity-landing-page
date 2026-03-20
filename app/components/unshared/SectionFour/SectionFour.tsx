@@ -19,26 +19,31 @@ const SectionFour = () => {
                     title="Supply Stabil & Konsisten"
                     subTitle="Pasokan terjaga untuk kebutuhan rutin maupun jangka panjang."
                     icon={InfinityIcon}
+                    dataAos="zoom-in-right"
                 />
                 <WhyUsCard
                     title="Quality control & sortasi"
                     subTitle="Disortir dan dicek untuk memastikan kualitas sesuai standar produksi."
                     icon={ClipBoardCheckIcon}
+                    dataAos="zoom-in-left"
                 />
                 <WhyUsCard
                     title="Pengiriman tepat waktu"
                     subTitle="Pengiriman terjadwal dan dapat disesuaikan dengan kebutuhan operasional."
                     icon={AlarmClockCheckIcon}
+                    dataAos="zoom-in-right"
                 />
                 <WhyUsCard
                     title="Harga transparan & kompetitif"
                     subTitle="Struktur harga jelas, menyesuaikan volume dan spesifikasi."
                     icon={BadgePercent}
+                    dataAos="zoom-in-left"
                 />
                 <WhyUsCard
                     title="Melayani Berbagai Sektor Industri"
                     subTitle="Pasokan terjaga untuk kebutuhan rutin maupun jangka panjang."
                     icon={BlocksIcon}
+                    dataAos="zoom-in-right"
                 />
             </div>
         </div>

@@ -8,14 +8,14 @@ const HeroBanner = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
 
             <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center gap-8">
-                <div>
+                <div data-aos="fade-right">
                     <MainText 
                         text="JUAL KEMIRI"
                         extraClass="text-stone-100 text-3xl md:text-5xl tracking-wide [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]"
                     />
                 </div>
                 
-                <div className="px-5 md:px-0">
+                <div className="px-5 md:px-0" data-aos="fade-left">
                     <SecondaryText
                         text="Kemiri Berkualitas untuk Kebutuhan Industri & Grosir"
                         extraClass="text-stone-100 max-w-xl mx-auto leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]"
