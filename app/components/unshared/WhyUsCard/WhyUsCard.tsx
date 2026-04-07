@@ -14,7 +14,7 @@ const WhyUsCard = ({ title, subTitle, icon: Icon, extraClass="", dataAos="" }:ca
     return(
         <div className="px-10 flex flex-col gap-y-3" data-aos={dataAos}>
             <Icon
-                extraClass="h-10 w-10 lg:h-13 lg:w-13 text-[var(--main-green)]"
+                extraClass="h-10 w-10 lg:h-13 lg:w-13 text-[var(--main-brown)]"
             />
 
             <MainText
@@ -23,6 +23,7 @@ const WhyUsCard = ({ title, subTitle, icon: Icon, extraClass="", dataAos="" }:ca
 
             <SecondaryText
                 text={subTitle}
+                extraClass="!text-[color:var(--main-brown)]"
             />
         </div>
     );
