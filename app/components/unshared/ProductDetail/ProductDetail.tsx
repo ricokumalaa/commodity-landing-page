@@ -2,7 +2,7 @@ import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 
 const ProductDetail = () => {
     return(
-        <div className="flex flex-col justify-center items-center text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-lg">
+        <div className="flex flex-col justify-center items-center text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-lg" data-aos="flip-right">
             <SecondaryText
                 text="Spesifikasi"
                 extraClass="!text-lg md:!text-xl"

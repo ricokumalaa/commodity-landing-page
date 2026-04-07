@@ -25,9 +25,9 @@ const Navbar = () => {
                     </div>
 
                     {/* MENU */}
-                    <ul className="hidden md:flex items-center justify-between gap-10 secondary-text font-semibold tracking-wide">
+                    <ul className="hidden md:flex items-center justify-between gap-10 main-brown font-semibold tracking-wide">
                         <li>
-                            <NavbarMenu link="#" text="Home" />
+                            <NavbarMenu link="#" text="Home"/>
                         </li>
                         <li>
                             <NavbarMenu link="#" text="About Us"/>
@@ -40,11 +40,11 @@ const Navbar = () => {
                     {/* MOBILE */}
                     {/* burger */}
                     <button className="md:hidden" onClick={burgerAction}>
-                        {isOpen ? <XMarkIcon className="w-6 h-6 secondary-text cursor-pointer"/> : <Bars3Icon className="w-6 h-6 secondary-text cursor-pointer"></Bars3Icon>}
+                        {isOpen ? <XMarkIcon className="w-6 h-6 main-brown cursor-pointer"/> : <Bars3Icon className="w-6 h-6 main-brown cursor-pointer"></Bars3Icon>}
                     </button>
 
                     {/* mobile navbar */}
-                    <div className={`absolute top-16 left-0 w-full shadow-md navbar-background flex flex-col items-center py-6 gap-7 secondary-text font-semibold tracking-wide transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "-translate-y-4 opacity-0 pointer-events-none"}`}>
+                    <div className={`absolute top-16 left-0 w-full shadow-md navbar-background flex flex-col items-center py-6 gap-7 main-brown font-semibold tracking-wide transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "-translate-y-4 opacity-0 pointer-events-none"}`}>
                         <a href="#" className="">Home</a>
                         <a href="#" className="">About Us</a>
                         <a href="#" className="">Contact</a>
