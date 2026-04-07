@@ -27,10 +27,10 @@ const Navbar = () => {
                     {/* MENU */}
                     <ul className="hidden md:flex items-center justify-between gap-10 main-brown font-semibold tracking-wide">
                         <li>
-                            <NavbarMenu link="#" text="Home"/>
+                            <NavbarMenu link="/" text="Home"/>
                         </li>
                         <li>
-                            <NavbarMenu link="#" text="About Us"/>
+                            <NavbarMenu link="/about-us" text="About Us"/>
                         </li>
                         <li>
                             <NavbarMenu link="#" text="Contact"/>
