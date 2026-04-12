@@ -33,6 +33,9 @@ const Navbar = () => {
                             <NavbarMenu link="/about-us" text="About Us"/>
                         </li>
                         <li>
+                            <NavbarMenu link="/catalogue" text="Catalog"/>
+                        </li>
+                        <li>
                             <NavbarMenu link="#" text="Contact"/>
                         </li>
                     </ul>
@@ -45,8 +48,9 @@ const Navbar = () => {
 
                     {/* mobile navbar */}
                     <div className={`absolute top-16 left-0 w-full shadow-md navbar-background flex flex-col items-center py-6 gap-7 main-brown font-semibold tracking-wide transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 translate-y-0" : "-translate-y-4 opacity-0 pointer-events-none"}`}>
-                        <a href="#" className="">Home</a>
-                        <a href="#" className="">About Us</a>
+                        <a href="/" className="">Home</a>
+                        <a href="/about-us" className="">About Us</a>
+                        <a href="/catalogue" className="">Catalog</a>
                         <a href="#" className="">Contact</a>
                     </div>
                 </div>
