@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <div className="flex flex-col gap-y-5 pt-15 pb-3 w-full bg-[var(--background)]">
             
-            <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-9/10 mx-auto tracking-wide md:pl-30">
+            <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-9/10 mx-auto tracking-wide xl:pl-30">
                 <div className="flex flex-col gap-y-7 p-5">
                     
                     <MainText

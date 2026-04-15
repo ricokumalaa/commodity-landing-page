@@ -12,28 +12,28 @@ const DescSection = () => {
                 />
                 <MainText
                     text="Kemiri Superior"
-                    extraClass="!text-[color:var(--main-brown)] text-5xl font-normal mt-2"
+                    extraClass="!text-[color:var(--main-brown)] text-3xl lg:text-5xl font-normal mt-2"
                 />
                 <MainText
                     text="Grade & Spesifikasi"
-                    extraClass="!text-[color:var(--main-brown)] text-5xl font-normal"
+                    extraClass="!text-[color:var(--main-brown)] text-3xl lg:text-5xl font-normal"
                 />
                 <SecondaryText
                     text="Untuk industri pengolahan pangan dan formulasi kosmetik. Setiap batch dikendalikan dengan sistem iklim (climate-controlled) dan bersertifikat untuk ekspor global."
-                    extraClass="!text-[color:var(--main-brown)] !text-lg !font-normal mt-5 w-full max-w-2xl"
+                    extraClass="!text-[color:var(--main-brown)] !text-md lg:!text-lg !font-normal mt-5 w-full max-w-2xl"
                 />
             </div>
             <div className="md:flex-none md:place-self-end w-full max-w-xs">
                 <div className="grid grid-cols-5 items-center pl-7 py-5 bg-[color:var(--secondary-green)] rounded-lg">
                     <div className="row-span-2 col-span-1">
                         <BadgeCheck 
-                            extraClass="h-8 w-8 text-[var(--main-green)]"
+                            extraClass="h-6 w-6 lg:h-8 lg:w-8 text-[var(--main-green)]"
                         />
                     </div>
                     <div className="col-span-4 row-span-2">
                         <SecondaryText
                             text="SUPPLY STATUS"
-                            extraClass="!text-[color:var(--main-green)] tracking-widest !text-xs !font-normal"
+                            extraClass="!text-[color:var(--main-green)] tracking-wider lg:tracking-widest !text-xs !font-normal"
                         />
                         <SecondaryText
                             text="ALL DAY ALL YEAR"
