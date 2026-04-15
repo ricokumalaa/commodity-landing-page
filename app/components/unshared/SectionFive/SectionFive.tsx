@@ -1,4 +1,4 @@
-import ContactUsButton from "../../shared/ContactUsButton/ContactUsButton";
+import SecondaryContactUsButton from "../../shared/SecondaryContactUsButton/SecondaryContactUsButton";
 import MainText from "../../shared/MainText/MainText";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 
@@ -30,7 +30,7 @@ const SectionFive = () => {
                     text="Mulai Kerjasama dengan kami"
                     extraClass="text-sm md:text-lg"
                 />
-                <ContactUsButton/>
+                <SecondaryContactUsButton />
             </div>
 
         </div>
