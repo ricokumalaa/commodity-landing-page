@@ -23,7 +23,7 @@ const DescSection = () => {
                     extraClass="!text-[color:var(--main-brown)] !text-md lg:!text-lg !font-normal mt-5 w-full max-w-2xl"
                 />
             </div>
-            <div className="md:flex-none md:place-self-end w-full max-w-xs">
+            <div className="md:flex-none md:place-self-center w-full max-w-xs">
                 <div className="grid grid-cols-5 items-center pl-7 py-5 bg-[color:var(--secondary-green)] rounded-lg">
                     <div className="row-span-2 col-span-1">
                         <BadgeCheck 

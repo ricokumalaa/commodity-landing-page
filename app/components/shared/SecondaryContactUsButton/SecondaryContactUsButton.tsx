@@ -4,21 +4,12 @@ const SecondaryContactUsButton = () => {
     
     return (
         <div className="w-full bg-white rounded-lg">
-            
-            <div className="grid grid-cols-5 gap-x-2 items-center p-2">
-                <div className="col-span-4">
-                    <SecondaryText
-                        text="Business Inquiries"
-                        extraClass="!font-normal !text-xs !text-[color:var(--outline)] text-left pl-2"
-                    />
-                </div>
-
-                <div className="col-span-1 p-2 bg-[var(--main-brown)] flex items-center justify-center rounded-md cursor-pointer transition duration-200 ease-out hover:scale-105">
-                    <a href="">
-                        <img src="https://cdn.simpleicons.org/whatsapp/FFFFFF" className="w-4 h-4"/>
-                    </a>
-                </div>
-            </div>
+            <a className="group flex items-center gap-x-3 py-3.5 px-8 text-stone-900 bg-amber-500 rounded-sm cursor-pointer transition-all duration-300 hover:bg-amber-400 hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] active:scale-95">
+                <img src="https://cdn.simpleicons.org/whatsapp/000000" className="w-5 h-5 transition-transform group-hover:rotate-12"/>
+                <span className="font-manrope text-xs md:text-sm font-black uppercase tracking-[0.2em]">
+                    CEK SEKARANG
+                </span>
+            </a>
 
         </div>
     );

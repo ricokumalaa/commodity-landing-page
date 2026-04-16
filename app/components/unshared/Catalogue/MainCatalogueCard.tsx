@@ -27,7 +27,7 @@ const MainCatalogueCard = ({ title, subTitle, moq, dataAos, imageName, alt="", m
 
                 <div className="absolute top-4 left-4 bg-[var(--secondary-green)] px-3 py-1 rounded-full">
                     <SecondaryText
-                        text="ORIGIN: EAST NUSA TENGGARA"
+                        text="ORIGIN: NUSA TENGGARA TIMUR"
                         extraClass="!text-[color:var(--dark-green)] !text-xs"
                     />
                 </div>

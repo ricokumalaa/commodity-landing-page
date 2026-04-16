@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 import MainText from "../../shared/MainText/MainText";
+import ContactUsButton from "../../shared/ContactUsButton/ContactUsButton";
 
 interface cardsProps{
     title: string;
@@ -57,14 +58,9 @@ const TertiaryCatalogueCard = ({ title, subTitle, icon: Icon, dataAos, imageName
                     </div>
                 </div>
 
-                <div className="flex flex-col mt-2 p-1 border border-(--outline)">
-                    <SecondaryText
-                        text="REQUEST SAMPLE"
-                        extraClass="!text-[color:var(--main-brown)] !text-xs tracking-widest text-center"
-                    />
-                    <SecondaryText
-                        text="REQUEST SAMPLE"
-                        extraClass="!text-[color:var(--main-brown)] !text-xs tracking-widest text-center"
+                <div className="flex flex-col mt-2 p-1">
+                    <ContactUsButton
+                        text="REQUEST SAMPLE SEKARANG"
                     />
                 </div>
 
