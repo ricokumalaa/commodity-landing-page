@@ -5,7 +5,6 @@ import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 interface cardsProps{
     title: string;
     subTitle: string;
-    moq: string;
     dataAos?: string;
     imageName: string;
     alt?: string;
@@ -14,7 +13,7 @@ interface cardsProps{
 }
 
 
-const MainCatalogueCard = ({ title, subTitle, moq, dataAos, imageName, alt="", moisture, capacity}: cardsProps) => {
+const MainCatalogueCard = ({ title, subTitle, dataAos, imageName, alt="", moisture, capacity}: cardsProps) => {
     return(
         <div className="w-full max-w-md lg:max-w-2xl mx-auto rounded-lg bg-[var(--foreground)] overflow-hidden">
             <div className="relative w-full aspect-[4/3]">
@@ -42,16 +41,6 @@ const MainCatalogueCard = ({ title, subTitle, moq, dataAos, imageName, alt="", m
                     <SecondaryText
                         text={subTitle}
                         extraClass="!text-[color:var(--main-brown)] !text-xs sm:!text-sm !font-normal"
-                    />
-                </div>
-                <div className="row-span-1 col-span-1">
-                    <SecondaryText
-                        text="MOQ"
-                        extraClass="!text-[color:var(--main-grey)] !text-xs !font-normal tracking-widest text-right"
-                    />
-                    <SecondaryText
-                        text={moq}
-                        extraClass="!text-[color:var(--main-brown)] text-right"
                     />
                 </div>
             </div>

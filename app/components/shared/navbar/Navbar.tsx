@@ -7,6 +7,7 @@ import "../navbar/navbar.css";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import SecondaryText from "../SecondaryText/SecondaryText";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -48,9 +49,9 @@ const Navbar = () => {
                             <NavbarMenu link="/catalogue" text="Catalogue"/>
                         </li>
                         <li>
-                            <a href="#contact" className={`px-6 py-2 rounded-sm transition-all ${pathName != "/" ? "bg-stone-900 text-white" : (scrolled ? "bg-stone-900 text-white" : "bg-white text-stone-900")}`}>
+                            <Link href="/contact-us" className={`px-6 py-2 rounded-sm transition-all ${pathName != "/" ? "bg-stone-900 text-white" : (scrolled ? "bg-stone-900 text-white" : "bg-white text-stone-900")}`} onClick={burgerAction}>
                                 Contact US
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
@@ -93,9 +94,9 @@ const Navbar = () => {
                                 />
                                 
                                 {/* Styled Contact Button for Mobile */}
-                                <a href="#contact" className="mt-4 font-manrope px-10 py-4 bg-stone-900 text-white text-sm font-black tracking-[0.3em] rounded-sm shadow-xl">
+                                <Link href="/contact-us" className="mt-4 font-manrope px-10 py-4 bg-stone-900 text-white text-sm font-black tracking-[0.3em] rounded-sm shadow-xl" onClick={burgerAction}>
                                     CONTACT US
-                                </a>
+                                </Link>
                             </nav>
 
                             {/* Small detail: Origin Text */}

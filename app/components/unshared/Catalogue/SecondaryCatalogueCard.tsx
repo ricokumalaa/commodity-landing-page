@@ -10,10 +10,9 @@ interface cardsProps{
     alt?: string;
     practicalSize: string;
     shellContent: string;
-    supplyCapacity: string;
 }
 
-const SecondaryCatalogueCard = ({ title, subTitle, dataAos, imageName, alt="", practicalSize, shellContent, supplyCapacity }: cardsProps) => {
+const SecondaryCatalogueCard = ({ title, subTitle, dataAos, imageName, alt="", practicalSize, shellContent }: cardsProps) => {
     return(
         <div className="w-full max-w-md mx-auto rounded-lg bg-[var(--foreground)] overflow-hidden">
             <div className="relative w-full aspect-[4/3]">
@@ -59,18 +58,6 @@ const SecondaryCatalogueCard = ({ title, subTitle, dataAos, imageName, alt="", p
                         extraClass="!text-[color:var(--main-brown)]"
                     />
                 </div>
-
-                <div className="flex justify-between items-center">
-                    <SecondaryText
-                        text="Supply Capacity"
-                        extraClass="!text-[color:var(--main-brown)] !text-sm !font-normal"
-                    />
-                    <SecondaryText
-                        text={supplyCapacity}
-                        extraClass="!text-[color:var(--main-brown)]"
-                    />
-                </div>
-
             </div>
         </div>
     );

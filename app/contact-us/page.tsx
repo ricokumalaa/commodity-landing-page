@@ -7,16 +7,12 @@ export default function AboutUs() {
         <main className="py-16">
             <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row md:items-end gap-10 mt-30 px-10">
                 <div className="flex-2">
-                    <SecondaryText
-                        text="B2B Partnership"
-                        extraClass="!text-[color:var(--dark-green)]"
-                    />
                     <MainText
-                        text="Tentang Kami"
+                        text="Contact us"
                         extraClass="!text-[color:var(--main-brown)] font-normal text-6xl mt-2 mb-7"
                     />
                     <SecondaryText
-                        text="Mengamankan supply langsung kemiri kualitas premium. hingga distribusi global, kami menyesuaikan hasil panen sesuai dengan spesifikasi tahunan Anda"
+                        text="Silakan hubungi kami untuk informasi lebih lanjut mengenai produk, harga, dan kerja sama. Tim kami akan merespons dengan cepat dan memberikan solusi terbaik sesuai kebutuhan Anda."
                         extraClass="!text-[color:var(--secondary-brown)] w-full max-w-xl"
                     />
                 </div>
