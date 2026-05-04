@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SecondaryText from "../components/shared/SecondaryText/SecondaryText";
 import MainText from "../components/shared/MainText/MainText";
+import ContactUsButton from "../components/shared/ContactUsButton/ContactUsButton";
 
 export default function AboutUs() {
     return (
@@ -27,64 +28,27 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="w-full max-w-7xl mx-auto mt-20 px-10">
+            <div className="w-full max-w-7xl mx-auto my-20 px-10">
 
-                <SecondaryText
-                    text="Sejak tahun 1990, perusahaan kami berfokus pada penyediaan kemiri berkualitas premium langsung dari sumber asal di Indonesia (NTT). Dengan pengalaman panjang dalam industri pertanian Lokal dan perdagangan internasional, kami berkomitmen menghadirkan produk yang memenuhi standar global."
-                    extraClass="!text-[color:var(--secondary-brown)]"
+                <MainText
+                    text="Rico Kumala (Sales & Marketing Manager)"
+                    extraClass="!text-[color:var(--main-brown)] font-normal text-xl"
                 />
-                <SecondaryText
-                    text="Kami mengutamakan:"
-                    extraClass="!text-[color:var(--secondary-brown)] mt-5"
+                <ContactUsButton
+                    text="HUBUNGI SEKARANG"
+                    extraClass="w-full max-w-sm mt-2 !py-3 !px-6"
                 />
-                <ul className="pl-15 list-disc">
-                    <li>
-                        <SecondaryText
-                            text="Kualitas Ekspor Premium: setiap butir kemiri disortir secara manual untuk keseragaman ukuran dan warna"
-                            extraClass="!text-[color:var(--secondary-brown)]"
-                        />
-                    </li>
-                    <li>
-                        <SecondaryText
-                            text="Keamanan: setiap batch dikendalikan dengan sistem iklim (climate-controlled)"
-                            extraClass="!text-[color:var(--secondary-brown)]"
-                        />
-                    </li>
-                    <li>
-                        <SecondaryText
-                            text="Fleksibilitas Produk: tersedia dalam bentuk utuh, setengah maupun pecahan sesuai kebutuhan industri."
-                            extraClass="!text-[color:var(--secondary-brown)]"
-                        />
-                    </li>
-                    <li>
-                        <SecondaryText
-                            text="Layanan Global: dari nama perusahaan hingga distribusi skala besar, kami menyesuaikan hasil panen dengan spesifikasi tahunan pelanggan."
-                            extraClass="!text-[color:var(--secondary-brown)]"
-                        />
-                    </li>
-                </ul>
-
-                <SecondaryText
-                    text="Dengan jaringan distribusi yang luas dan standar mutu yang konsisten, kami siap menjadi mitra terpercaya dalam memenuhi kebutuhan industri pangan, ekstraksi minyak, maupun formulasi kosmetik."
-                    extraClass="!text-[color:var(--secondary-brown)] mt-5"
+                
+                <MainText
+                    text="Reinhart Ishwara (Sales & Marketing Manager)"
+                    extraClass="!text-[color:var(--main-brown)] font-normal text-xl mt-5"
+                />
+                <ContactUsButton
+                    text="HUBUNGI SEKARANG"
+                    extraClass="w-full max-w-sm mt-2 text-sm !py-3 !px-6"
                 />
 
-                <SecondaryText
-                    text="STANDARD RESPONSE"
-                    extraClass="!text-[color:var(--outline)] !text-xs opacity-75 tracking-wide mt-10"
-                />
-                <SecondaryText
-                    text="4 Business Hours"
-                    extraClass="!text-[color:var(--main-brown)]"
-                />
-                <SecondaryText
-                    text="LOGISTIC SUPPORT"
-                    extraClass="!text-[color:var(--outline)] !text-xs opacity-75 tracking-wide mt-5"
-                />
-                <SecondaryText
-                    text="Door-to-Door Global Delivery"
-                    extraClass="!text-[color:var(--main-brown)]"
-                />
+                
 
             </div>
         </main>
