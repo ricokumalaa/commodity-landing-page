@@ -2,6 +2,7 @@ import Image from "next/image";
 import SecondaryText from "../components/shared/SecondaryText/SecondaryText";
 import MainText from "../components/shared/MainText/MainText";
 import ContactUsButton from "../components/shared/ContactUsButton/ContactUsButton";
+import ContactUsAnimation from "../components/shared/ContactUsAnimation/ContactUsAnimation";
 
 export default function AboutUs() {
     return (
@@ -10,7 +11,7 @@ export default function AboutUs() {
                 <div className="flex-2">
                     <MainText
                         text="Contact us"
-                        extraClass="!text-[color:var(--main-brown)] font-normal text-6xl mt-2 mb-7"
+                        extraClass="!text-[color:var(--main-brown)] font-normal text-4xl md:text-6xl mt-2 mb-7"
                     />
                     <SecondaryText
                         text="Silakan hubungi kami untuk informasi lebih lanjut mengenai produk, harga, dan kerja sama. Tim kami akan merespons dengan cepat dan memberikan solusi terbaik sesuai kebutuhan Anda."
@@ -18,13 +19,7 @@ export default function AboutUs() {
                     />
                 </div>
                 <div className="flex-1">
-                    <Image
-                        src={`/images/shock.png`}
-                        alt="shock"
-                        width={350}
-                        height={350}
-                        className="rounded-md shadow-md"
-                    />
+                    <ContactUsAnimation/>
                 </div>
             </div>
 

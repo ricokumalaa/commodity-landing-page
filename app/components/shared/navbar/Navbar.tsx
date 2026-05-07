@@ -33,12 +33,19 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
                     {/* LOGO: No border, just clean typography */}
-                    <div className={`font-serif text-2xl italic tracking-tighter ${pathName != "/" ? "text-stone-900" : (scrolled ? "text-stone-900" : "text-white")}`}>
-                        NTT<span className="font-bold not-italic text-amber-600">KEMIRI</span>
-                    </div>
+                    <Link href={`/`}>
+                        <div className={`font-serif italic tracking-tighter ${pathName != "/" ? "text-stone-900" : (scrolled ? "text-stone-900" : "text-white")}`}>
+                            <div className="text-2xl">
+                                MITRA<span className="font-bold not-italic text-amber-600">BUMI</span>
+                            </div>
+                            <div className="text-xs text-center font-bold not-italic text-amber-600 -mt-2">
+                                ORGANIK
+                            </div>
+                        </div>
+                    </Link>
 
                     {/* MENU */}
-                    <ul className={`hidden md:flex items-center gap-10 font-manrope font-bold uppercase text-[11px] tracking-[0.25em] ${pathName != "/" ? "text-stone-600" : (scrolled ? "text-stone-600" : "text-stone-200")}`}>
+                    <ul className={`hidden lg:flex items-center gap-10 font-manrope font-bold uppercase text-[11px] tracking-[0.25em] ${pathName != "/" ? "text-stone-600" : (scrolled ? "text-stone-600" : "text-stone-200")}`}>
                         <li className="hover:text-amber-500 transition-colors">
                             <NavbarMenu link="/" text="Home"/>
                         </li>
@@ -57,12 +64,12 @@ const Navbar = () => {
 
                     {/* MOBILE */}
                     {/* burger */}
-                    <button className="md:hidden relative z-50 p-2" onClick={burgerAction}>
+                    <button className="lg:hidden relative z-50 p-2" onClick={burgerAction}>
                         {isOpen ? <XMarkIcon className="w-8 h-8 text-stone-800 transition-all duration-300"/> : <Bars3Icon className={`w-8 h-8 transition-all duration-300 ${pathName != "/" ? "text-stone-800" : (scrolled ? "text-stone-800" : "text-white")}`} />}
                     </button>
 
                     {/* mobile navbar */}
-                    <div className={`fixed inset-0 top-0 left-0 w-full h-screen z-40 transition-all duration-500 ease-in-out md:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+                    <div className={`fixed inset-0 top-0 left-0 w-full h-screen z-40 transition-all duration-500 ease-in-out lg:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
                         {/* Background Blur Overlay */}
                         <div className="absolute inset-0 bg-white/95 backdrop-blur-xl" onClick={burgerAction}></div>
 
@@ -70,7 +77,12 @@ const Navbar = () => {
                         <div className={`relative flex flex-col items-center justify-center h-full gap-8 transition-transform duration-500 ${isOpen ? "translate-y-0" : "translate-y-10"}`}>
                             {/* Brand Logo in Mobile Menu */}
                             <div className="font-serif text-2xl italic mb-4">
-                                NTT<span className="font-bold not-italic text-amber-600">Kemiri</span>
+                                <div className="text-2xl">
+                                    MITRA<span className="font-bold not-italic text-amber-600">BUMI</span>
+                                </div>
+                                <div className="text-xs text-center font-bold not-italic text-amber-600 -mt-2">
+                                    ORGANIK
+                                </div>
                             </div>
 
                             <nav className="flex flex-col items-center gap-6">
@@ -86,7 +98,7 @@ const Navbar = () => {
                                     onCLick={burgerAction}
                                     extraClass="!text-xl !font-light tracking-widest !text-stone-800 !hover:text-amber-600 transition-colors !p-0"
                                 />
-                                <NavbarMenu 
+                                <NavbarMenu
                                     link="/catalogue" 
                                     text="CATALOGUE"
                                     onCLick={burgerAction} 

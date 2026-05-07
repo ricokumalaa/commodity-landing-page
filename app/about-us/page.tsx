@@ -13,7 +13,7 @@ export default function AboutUs() {
                     />
                     <MainText
                         text="Tentang Kami"
-                        extraClass="!text-[color:var(--main-brown)] font-normal text-6xl mt-2 mb-7"
+                        extraClass="!text-[color:var(--main-brown)] font-normal text-4xl md:text-6xl mt-2 mb-7"
                     />
                     <SecondaryText
                         text="Mengamankan supply langsung kemiri kualitas premium. hingga distribusi global, kami menyesuaikan hasil panen sesuai dengan spesifikasi tahunan Anda"
