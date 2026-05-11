@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MainText from "../MainText/MainText";
 import SecondaryText from "../SecondaryText/SecondaryText";
 
@@ -7,11 +8,17 @@ const Footer = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-9/10 mx-auto tracking-wide xl:pl-30">
                 <div className="flex flex-col gap-y-7 p-5">
-                    
-                    <MainText
-                        text="COMPANY"
-                        extraClass="text-xl md:text-3xl text-white"
-                    />
+
+                    <Link href={`/`}>
+                        <div className={`font-serif italic tracking-tighter text-white w-full max-w-[150px] md:max-w-[190px] mx-auto md:mx-0`}>
+                            <div className="text-2xl md:text-3xl">
+                                MITRA<span className="font-bold not-italic text-amber-600">BUMI</span>
+                            </div>
+                            <div className="text-xs text-center font-bold not-italic text-amber-600 -mt-2">
+                                ORGANIK
+                            </div>
+                        </div>
+                    </Link>
                     
                     <div className="w-full max-w-sm">
                         <SecondaryText

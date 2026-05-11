@@ -16,11 +16,11 @@ const SectionFive = () => {
                     extraClass="text-lg md:text-2xl !text-[color:var(--main-brown)]"
                 />
                 <MainText
-                    text="Sudah Berdiri Sejak ______"
+                    text="Sudah Berdiri Sejak 1990"
                     extraClass="text-lg md:text-2xl !text-[color:var(--main-brown)]"
                 />
                 <MainText
-                    text="Sudah mengirim ____ TON Kemiri"
+                    text="Sudah mengirim 1000 TON Kemiri"
                     extraClass="text-lg md:text-2xl !text-[color:var(--main-brown)]"
                 />
             </div>

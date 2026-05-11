@@ -22,7 +22,7 @@ export default function Catalogue() {
                 <div className="lg:col-span-3 flex flex-col gap-y-7">
                     
                     <MainCatalogueCard
-                        imageName="shock.png"
+                        imageName="kemiri.jpeg"
                         title="Grade Super Whole"
                         subTitle="Disortir secara manual untuk keseragaman ukuran dan warna."
                         moisture="< 7.0% Max (Dry)"
