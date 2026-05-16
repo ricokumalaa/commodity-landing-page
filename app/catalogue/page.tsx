@@ -22,7 +22,8 @@ export default function Catalogue() {
                 <div className="lg:col-span-3 flex flex-col gap-y-7">
                     
                     <MainCatalogueCard
-                        imageName="kemiri.jpeg"
+                        imageName="kemiri-utuh.png"
+                        alt="Kemiri utuh grade super"
                         title="Grade Super Whole"
                         subTitle="Disortir secara manual untuk keseragaman ukuran dan warna."
                         moisture="< 7.0% Max (Dry)"
@@ -35,7 +36,8 @@ export default function Catalogue() {
 
                 <div className="lg:col-span-2 flex flex-col gap-y-7">
                     <SecondaryCatalogueCard
-                        imageName="shock.png"
+                        imageName="kemiri-belah.png"
+                        alt="Kemiri belah 2 grade super"
                         title="Grade Super Split / Halved"
                         subTitle="Ideal untuk industri Ekstrasi Minyak"
                         practicalSize="Halved or by Request"
@@ -46,7 +48,8 @@ export default function Catalogue() {
                         title="Grade Super Crushed"
                         subTitle="Ideal untuk Industri rempah atau minyak"
                         icon={FlaskConical}
-                        imageName="shock.png"
+                        imageName="kemiri-menir.png"
+                        alt="Kemiri menir grade super"
                         descTitle="QUALITY CHECK"
                         descBody="Akan dikirim sekitar ± 3 kg kepada pelanggan yang meminta sampel. Produk dapat berupa utuh, dihancurkan, atau dibelah dua sesuai kebutuhan."
                     />

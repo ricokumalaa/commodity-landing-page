@@ -22,7 +22,7 @@ export default function AboutUs() {
                 </div>
                 <div className="flex-1">
                     <Image
-                        src={`/images/shock.png`}
+                        src={`/images/ntt.png`}
                         alt="shock"
                         width={350}
                         height={350}

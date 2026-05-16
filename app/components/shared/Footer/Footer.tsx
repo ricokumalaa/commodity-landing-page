@@ -37,15 +37,15 @@ const Footer = () => {
 
                     <div>
                         <SecondaryText
-                            text="WhatsApp: 08xxxxxxx / 08xxxxxxxxx"
+                            text="WhatsApp: 0812-8821-1755 / 0812-8179-7771"
                             extraClass="!font-normal text-white"
                         />
                         <SecondaryText
-                            text="Email: saels@perusahaan.com"
+                            text="Email: sales@perusahaan.com"
                             extraClass="!font-normal text-white"
                         />
                         <SecondaryText
-                            text="Taman Semanan Indah, Jln Dharma Permai"
+                            text="Cengkareng, Jakarta Barat"
                             extraClass="!font-normal text-white"
                         />
                     </div>
@@ -73,7 +73,7 @@ const Footer = () => {
 
             <div className="text-center">
                 <SecondaryText
-                    text="© [Tahun] [Nama Perusahaan]. All rights reserved."
+                    text="© 1990 MITRA BUMI ORGANIK. All rights reserved."
                     extraClass="!text-xs !font-normal text-white"
                 />
             </div>

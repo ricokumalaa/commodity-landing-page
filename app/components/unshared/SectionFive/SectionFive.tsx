@@ -20,7 +20,7 @@ const SectionFive = () => {
                     extraClass="text-lg md:text-2xl !text-[color:var(--main-brown)]"
                 />
                 <MainText
-                    text="Sudah mengirim 1000 TON Kemiri"
+                    text="Sudah mengirim lebih dari 1000 TON Kemiri"
                     extraClass="text-lg md:text-2xl !text-[color:var(--main-brown)]"
                 />
             </div>
@@ -30,7 +30,10 @@ const SectionFive = () => {
                     text="Mulai Kerjasama dengan kami"
                     extraClass="!text-[color:var(--main-brown)] text-sm md:text-lg"
                 />
-                <SecondaryContactUsButton />
+                <SecondaryContactUsButton 
+                    text="CEK SEKARANG"
+                    link="https://wa.me/081281797771"
+                />
             </div>
 
         </div>

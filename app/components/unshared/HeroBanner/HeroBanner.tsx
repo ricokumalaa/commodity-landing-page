@@ -26,6 +26,7 @@ const HeroBanner = () => {
                     <div data-aos="zoom-in" data-aos-delay="400">
                         <ContactUsButton 
                             text="CEK SEKARANG"
+                            link="https://wa.me/081288211755"
                         />
                         <div className="flex items-center gap-2 px-1 mt-1">
                             <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>

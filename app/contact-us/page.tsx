@@ -3,6 +3,7 @@ import SecondaryText from "../components/shared/SecondaryText/SecondaryText";
 import MainText from "../components/shared/MainText/MainText";
 import ContactUsButton from "../components/shared/ContactUsButton/ContactUsButton";
 import ContactUsAnimation from "../components/shared/ContactUsAnimation/ContactUsAnimation";
+import Link from "next/link";
 
 export default function AboutUs() {
     return (
@@ -29,9 +30,11 @@ export default function AboutUs() {
                     text="Rico Kumala (Sales & Marketing Manager)"
                     extraClass="!text-[color:var(--main-brown)] font-normal text-xl"
                 />
+                
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 !py-3 !px-6"
+                    link="https://wa.me/081281797771"
                 />
                 
                 <MainText
@@ -41,9 +44,8 @@ export default function AboutUs() {
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 text-sm !py-3 !px-6"
+                    link="https://wa.me/081288211755"
                 />
-
-                
 
             </div>
         </main>
