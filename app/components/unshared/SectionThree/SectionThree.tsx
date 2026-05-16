@@ -15,7 +15,7 @@ const SectionThree = () => {
             <div className="w-full mx-auto grid grid-cols-1 justify-items-center md:justify-items-start md:grid-cols-2 gap-y-10">
                 <ProductCard
                     text=""
-                    imageName="shock.png"
+                    imageName="kemiri.jpeg"
                 />
 
                 <ProductType/>

@@ -13,7 +13,7 @@ export default function AboutUs() {
                     />
                     <MainText
                         text="Tentang Kami"
-                        extraClass="!text-[color:var(--main-brown)] font-normal text-6xl mt-2 mb-7"
+                        extraClass="!text-[color:var(--main-brown)] font-normal text-4xl md:text-6xl mt-2 mb-7"
                     />
                     <SecondaryText
                         text="Mengamankan supply langsung kemiri kualitas premium. hingga distribusi global, kami menyesuaikan hasil panen sesuai dengan spesifikasi tahunan Anda"
@@ -22,7 +22,7 @@ export default function AboutUs() {
                 </div>
                 <div className="flex-1">
                     <Image
-                        src={`/images/shock.png`}
+                        src={`/images/ntt.png`}
                         alt="shock"
                         width={350}
                         height={350}
@@ -34,7 +34,7 @@ export default function AboutUs() {
             <div className="w-full max-w-7xl mx-auto mt-20 px-10">
 
                 <SecondaryText
-                    text="Didirikan sejak tahun 2000, perusahaan kami berfokus pada penyediaan kemiri berkualitas premium langsung dari sumber asal di Indonesia (NTT). Dengan pengalaman panjang dalam industri pertanian Lokal dan perdagangan internasional, kami berkomitmen menghadirkan produk yang memenuhi standar global."
+                    text="Sejak tahun 1990, perusahaan kami berfokus pada penyediaan kemiri berkualitas premium langsung dari sumber asal di Indonesia (NTT). Dengan pengalaman panjang dalam industri pertanian Lokal dan perdagangan internasional, kami berkomitmen menghadirkan produk yang memenuhi standar global."
                     extraClass="!text-[color:var(--secondary-brown)]"
                 />
                 <SecondaryText
