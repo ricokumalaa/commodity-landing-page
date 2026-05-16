@@ -30,7 +30,7 @@ const HeroBanner = () => {
                         />
                         <div className="flex items-center gap-2 px-1 mt-1">
                             <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-                            <p className="font-manrope text-[10px] uppercase tracking-[0.2em] text-stone-400">
+                            <p className="font-manrope text-[10px] uppercase tracking-[0.2em] text-stone-300">
                                 Factory-Direct Supply • NTT Origin
                             </p>
                         </div>

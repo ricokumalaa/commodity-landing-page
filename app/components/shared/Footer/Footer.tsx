@@ -39,12 +39,12 @@ const Footer = () => {
                         <div className="flex flex-row gap-x-1">
                             <SecondaryText
                                 text="WhatsApp: "
-                                extraClass="!font-normal text-white"
+                                extraClass="!font-normal text-xs text-white"
                             />
                             <Link href={`https://wa.me/081288211755`}>
                                 <SecondaryText
                                     text="0812-8821-1755"
-                                    extraClass="!font-normal text-green underline"
+                                    extraClass="!font-normal !text-xs md:!text-base text-green underline"
                                 />
                             </Link>
                             <SecondaryText
@@ -54,17 +54,17 @@ const Footer = () => {
                             <Link href={`https://wa.me/081281797771`}>
                                 <SecondaryText
                                     text="0812-8179-7771"
-                                    extraClass="!font-normal text-green underline"
+                                    extraClass="!font-normal !text-xs md:!text-base text-green underline"
                                 />
                             </Link>
                         </div>
                         <SecondaryText
                             text="Email: sales@perusahaan.com"
-                            extraClass="!font-normal text-white"
+                            extraClass="!font-normal text-white !text-xs md:!text-base"
                         />
                         <SecondaryText
                             text="Cengkareng, Jakarta Barat"
-                            extraClass="!font-normal text-white"
+                            extraClass="!font-normal text-white !text-xs md:!text-base"
                         />
                     </div>
                 </div>
@@ -79,11 +79,11 @@ const Footer = () => {
                     <div>
                         <SecondaryText
                             text="Senin - Minggu"
-                            extraClass="!font-normal text-white"
+                            extraClass="!font-normal text-white !text-xs md:!text-base"
                         />
                         <SecondaryText
                             text=" 09.00 - 20.00 WIB"
-                            extraClass="!font-normal text-white"
+                            extraClass="!font-normal text-white !text-xs md:!text-base"
                         />
                     </div>
                 </div>
