@@ -14,7 +14,7 @@ const ContactUsAnimation = () => {
                 autoplay
                 loop
                 src="/animations/contact-us.json"
-                className="w-full h-full max-w-[350] max-h-[350]"
+                className="w-full h-full max-w-[350px] max-h-[350px]"
             />
         </>
     );
