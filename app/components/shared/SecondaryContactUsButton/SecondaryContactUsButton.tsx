@@ -6,7 +6,7 @@ interface cardsProps{
 }
 
 
-const SecondaryContactUsButton = ({ text, link="" }) => {
+const SecondaryContactUsButton = ({ text, link="" }:cardsProps) => {
     
     return (
         <div className="w-full bg-white rounded-lg">
