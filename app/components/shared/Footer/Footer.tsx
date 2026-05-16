@@ -36,10 +36,28 @@ const Footer = () => {
                     />
 
                     <div>
-                        <SecondaryText
-                            text="WhatsApp: 0812-8821-1755 / 0812-8179-7771"
-                            extraClass="!font-normal text-white"
-                        />
+                        <div className="flex flex-row gap-x-1">
+                            <SecondaryText
+                                text="WhatsApp: "
+                                extraClass="!font-normal text-white"
+                            />
+                            <Link href={`https://wa.me/081288211755`}>
+                                <SecondaryText
+                                    text="0812-8821-1755"
+                                    extraClass="!font-normal text-green underline"
+                                />
+                            </Link>
+                            <SecondaryText
+                                text="/"
+                                extraClass="!font-normal text-white"
+                            />
+                            <Link href={`https://wa.me/081281797771`}>
+                                <SecondaryText
+                                    text="0812-8179-7771"
+                                    extraClass="!font-normal text-green underline"
+                                />
+                            </Link>
+                        </div>
                         <SecondaryText
                             text="Email: sales@perusahaan.com"
                             extraClass="!font-normal text-white"
@@ -73,7 +91,7 @@ const Footer = () => {
 
             <div className="text-center">
                 <SecondaryText
-                    text="© 1990 MITRA BUMI ORGANIK. All rights reserved."
+                    text="© 2024 MITRA BUMI ORGANIK. All rights reserved."
                     extraClass="!text-xs !font-normal text-white"
                 />
             </div>
