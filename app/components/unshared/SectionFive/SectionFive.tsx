@@ -32,7 +32,7 @@ const SectionFive = () => {
                 />
                 <SecondaryContactUsButton 
                     text="CEK SEKARANG"
-                    link="https://wa.me/081281797771"
+                    link="https://wa.me/6281281797771"
                 />
             </div>
 

@@ -61,7 +61,7 @@ const TertiaryCatalogueCard = ({ title, subTitle, icon: Icon, dataAos, imageName
                 <div className="flex flex-col mt-2 p-1">
                     <ContactUsButton
                         text="REQUEST SAMPLE SEKARANG"
-                        link="https://wa.me/081281797771"
+                        link="https://wa.me/6281281797771"
                     />
                 </div>
 

@@ -41,7 +41,7 @@ const Footer = () => {
                                 text="WhatsApp: "
                                 extraClass="!font-normal text-xs text-white"
                             />
-                            <Link href={`https://wa.me/081288211755`}>
+                            <Link href={`https://wa.me/6281288211755`}>
                                 <SecondaryText
                                     text="0812-8821-1755"
                                     extraClass="!font-normal !text-xs md:!text-base text-green underline"
@@ -51,7 +51,7 @@ const Footer = () => {
                                 text="/"
                                 extraClass="!font-normal text-white"
                             />
-                            <Link href={`https://wa.me/081281797771`}>
+                            <Link href={`https://wa.me/6281281797771`}>
                                 <SecondaryText
                                     text="0812-8179-7771"
                                     extraClass="!font-normal !text-xs md:!text-base text-green underline"

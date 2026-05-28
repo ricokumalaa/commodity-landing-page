@@ -34,7 +34,7 @@ export default function AboutUs() {
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 !py-3 !px-6"
-                    link="https://wa.me/081281797771"
+                    link="https://wa.me/6281281797771"
                 />
                 
                 <MainText
@@ -44,7 +44,7 @@ export default function AboutUs() {
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 text-sm !py-3 !px-6"
-                    link="https://wa.me/081288211755"
+                    link="https://wa.me/6281288211755"
                 />
 
             </div>
