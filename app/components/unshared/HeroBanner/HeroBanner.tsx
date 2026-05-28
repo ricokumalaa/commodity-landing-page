@@ -18,7 +18,7 @@ const HeroBanner = () => {
                     
                     <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                         <SecondaryText
-                            text="Reliable bulk supply with consistent grading and moisture control, shipped directly from East Nusa Tenggara to your industry."
+                            text="Pasokan dalam jumlah besar dengan kualitas yang konsisten dan kontrol kadar air yang terjaga, dikirim langsung dari Nusa Tenggara Timur untuk kebutuhan industri Anda."
                             extraClass="text-stone-300 text-lg md:text-xl max-w-lg mb-10 leading-relaxed"
                         />
                     </div>

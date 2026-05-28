@@ -59,7 +59,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <SecondaryText
-                            text="Email: sales@perusahaan.com"
+                            text="Email: mitrabumiorganikadmin@gmail.com"
                             extraClass="!font-normal text-white !text-xs md:!text-base"
                         />
                         <SecondaryText
