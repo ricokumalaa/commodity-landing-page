@@ -8,6 +8,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import SecondaryText from "../SecondaryText/SecondaryText";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Navbar = () => {
 
@@ -26,6 +27,15 @@ const Navbar = () => {
     }, []);
 
     const pathName = usePathname();
+
+    const handleContactUsClick = () => {
+        sendGAEvent("event", "Contact Us Button Click", {
+            button_name: "Header Contact Us",
+            method: "click",
+        });
+
+        burgerAction();
+    };
 
     return (
         <>
@@ -56,7 +66,7 @@ const Navbar = () => {
                             <NavbarMenu link="/catalogue" text="Catalogue"/>
                         </li>
                         <li>
-                            <Link href="/contact-us" className={`px-6 py-2 rounded-sm transition-all ${pathName != "/" ? "bg-stone-900 text-white" : (scrolled ? "bg-stone-900 text-white" : "bg-white text-stone-900")}`} onClick={burgerAction}>
+                            <Link href="/contact-us" className={`px-6 py-2 rounded-sm transition-all ${pathName != "/" ? "bg-stone-900 text-white" : (scrolled ? "bg-stone-900 text-white" : "bg-white text-stone-900")}`} onClick={handleContactUsClick}>
                                 Contact US
                             </Link>
                         </li>
@@ -89,24 +99,24 @@ const Navbar = () => {
                                 <NavbarMenu 
                                     link="/" 
                                     text="HOME"
-                                    onCLick={burgerAction}
+                                    onClick={burgerAction}
                                     extraClass="!text-xl !font-light tracking-widest !text-stone-800 !hover:text-amber-600 transition-colors !p-0"
                                 />
                                 <NavbarMenu 
                                     link="/about-us" 
                                     text="ABOUT US"
-                                    onCLick={burgerAction}
+                                    onClick={burgerAction}
                                     extraClass="!text-xl !font-light tracking-widest !text-stone-800 !hover:text-amber-600 transition-colors !p-0"
                                 />
                                 <NavbarMenu
                                     link="/catalogue" 
                                     text="CATALOGUE"
-                                    onCLick={burgerAction} 
+                                    onClick={burgerAction} 
                                     extraClass="!text-xl !font-light tracking-widest !text-stone-800 !hover:text-amber-600 transition-colors !p-0"
                                 />
                                 
                                 {/* Styled Contact Button for Mobile */}
-                                <Link href="/contact-us" className="mt-4 font-manrope px-10 py-4 bg-stone-900 text-white text-sm font-black tracking-[0.3em] rounded-sm shadow-xl" onClick={burgerAction}>
+                                <Link href="/contact-us" className="mt-4 font-manrope px-10 py-4 bg-stone-900 text-white text-sm font-black tracking-[0.3em] rounded-sm shadow-xl" onClick={handleContactUsClick}>
                                     CONTACT US
                                 </Link>
                             </nav>

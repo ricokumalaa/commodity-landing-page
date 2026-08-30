@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import "./globals.css";
 import AosProvider from "./components/shared/AosProvider/AosProvider";
@@ -20,6 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
@@ -31,6 +33,8 @@ export default function RootLayout({
           </AosProvider>
         <Footer/>
       </body>
+
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
     </html>
   );
 }

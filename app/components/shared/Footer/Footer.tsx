@@ -1,8 +1,18 @@
+'use client'
+
 import Link from "next/link";
 import MainText from "../MainText/MainText";
 import SecondaryText from "../SecondaryText/SecondaryText";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Footer = () => {
+
+    const gaEvent = () => {
+        sendGAEvent('event', 'Footer Phone Number', {
+            method: 'click',
+        });
+    };
+
     return(
         <div className="flex flex-col gap-y-5 pt-15 pb-3 w-full bg-[var(--main-brown)]">
             
@@ -41,7 +51,7 @@ const Footer = () => {
                                 text="WhatsApp: "
                                 extraClass="!font-normal text-xs text-white"
                             />
-                            <Link href={`https://wa.me/6281288211755`}>
+                            <Link onClick={gaEvent} href={`https://wa.me/6281288211755`}>
                                 <SecondaryText
                                     text="0812-8821-1755"
                                     extraClass="!font-normal !text-xs md:!text-base text-green underline"
@@ -51,7 +61,7 @@ const Footer = () => {
                                 text="/"
                                 extraClass="!font-normal text-white"
                             />
-                            <Link href={`https://wa.me/6281281797771`}>
+                            <Link onClick={gaEvent} href={`https://wa.me/6281281797771`}>
                                 <SecondaryText
                                     text="0812-8179-7771"
                                     extraClass="!font-normal !text-xs md:!text-base text-green underline"
