@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MITRA BUMI ORGANIK
 
-## Getting Started
+A modern corporate and product landing page for a premium organic commodities brand. Built with Next.js, TypeScript, and Tailwind CSS, this project focuses on storytelling, product presentation, and conversion-oriented CTAs for product inquiries and contact requests.
 
-First, run the development server:
+## Overview
+
+This project includes:
+
+- A responsive landing page with hero sections and product highlights
+- Catalogue and product detail views
+- About Us and Contact Us sections
+- Animated UI elements powered by AOS
+- Google Analytics integration using Next.js third-party GA support
+- Clean marketing-oriented design for B2B and global supply distribution
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- AOS
+- Heroicons
+- Google Analytics via @next/third-parties
+
+## Project Structure
+
+```bash
+app/
+  about-us/
+  catalogue/
+  contact-us/
+  components/
+  globals.css
+  layout.tsx
+  page.tsx
+public/
+  animations/
+  images/
+package.json
+next.config.ts
+tsconfig.json
+.eslintrc.json (or config managed through eslint.config.mjs)
+```
+
+## Prerequisites
+
+Before you begin, make sure you have installed:
+
+- Node.js 20+
+- npm or your preferred package manager
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone <your-repository-url>
+cd commodity-landing-page
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a local environment file:
+
+```bash
+cp .env.example .env.local
+```
+
+If `.env.example` does not exist, create a `.env.local` file manually with:
+
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+Replace `G-XXXXXXXXXX` with your Google Analytics measurement ID.
+
+## Running the Project
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production Build
 
-## Learn More
+To build the app for production:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the production build locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run start
+```
 
-## Deploy on Vercel
+## Linting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+This project is ready to deploy on platforms such as:
+
+- Vercel
+- Netlify
+- Any Node.js-compatible hosting platform
+
+For Vercel, the project can be deployed directly from the repository with the same environment variable configuration.
+
+## Environment Variables
+
+| Variable | Required | Description |
+| --- | --- | --- |
+| `NEXT_PUBLIC_GA_ID` | Yes | Google Analytics measurement ID used for page and event tracking |
+
+## Notes
+
+- The app uses the App Router structure from Next.js.
+- Font optimization is handled by Next.js built-in font loader.
+- Analytics events are configured in UI interaction components such as navbar and contact buttons.
+
+## License
+
+This project is currently unlicensed unless you add a specific license file for public or commercial use.
+
+## Contact
+
+For business inquiries, product requests, or collaboration opportunities, use the contact section of the website or contact the project owner directly.
