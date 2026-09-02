@@ -11,7 +11,7 @@ interface cardsProps{
 const SecondaryContactUsButton = ({ text, link="" }:cardsProps) => {
     
     const secondaryContactUsGaEvent = () => {
-        sendGAEvent('event', 'Secondary Contact Us Button', {
+        sendGAEvent('event', 'Whatsapp Button', {
             method: 'click',
         });
     };

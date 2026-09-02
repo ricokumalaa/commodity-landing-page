@@ -29,7 +29,7 @@ const Navbar = () => {
     const pathName = usePathname();
 
     const handleContactUsClick = () => {
-        sendGAEvent("event", "Contact Us Button Click", {
+        sendGAEvent("event", "Whatsapp Button", {
             button_name: "Header Contact Us",
             method: "click",
         });

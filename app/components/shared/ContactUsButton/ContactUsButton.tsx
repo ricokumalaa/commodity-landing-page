@@ -12,7 +12,7 @@ interface cardsProps{
 const ContactUsButton = ({ text, extraClass="", link="" }: cardsProps) => {
 
     const contactUsGaEvent = () => {
-        sendGAEvent('event', 'Contact Us Button', {
+        sendGAEvent('event', 'Whatsapp Button', {
             method: 'click',
         });
     };

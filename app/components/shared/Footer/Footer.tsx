@@ -8,7 +8,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 const Footer = () => {
 
     const gaEvent = () => {
-        sendGAEvent('event', 'Footer Phone Number', {
+        sendGAEvent('event', 'Whatsapp Button', {
             method: 'click',
         });
     };
