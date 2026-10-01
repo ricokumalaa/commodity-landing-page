@@ -5,7 +5,7 @@ import encodeWaText from "@/utils/whatsapp";
 
 const HeroBanner = () => {
     const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
-    
+
     return (
         <div className="relative pt-16 min-h-screen bg-[url(/images/hero-banner.png)] bg-cover bg-center bg-no-repeat">
             <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-black/50"></div>

@@ -3,7 +3,7 @@ import SecondaryText from "../components/shared/SecondaryText/SecondaryText";
 import MainText from "../components/shared/MainText/MainText";
 import ContactUsButton from "../components/shared/ContactUsButton/ContactUsButton";
 import ContactUsAnimation from "../components/shared/ContactUsAnimation/ContactUsAnimation";
-import encodeWaText from "../../utils/whatsapp";
+import encodeWaText from "@/utils/whatsapp";
 import Link from "next/link";
 
 export default function AboutUs() {
