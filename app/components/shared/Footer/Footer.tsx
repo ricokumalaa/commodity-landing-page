@@ -4,8 +4,10 @@ import Link from "next/link";
 import MainText from "../MainText/MainText";
 import SecondaryText from "../SecondaryText/SecondaryText";
 import { sendGAEvent } from "@next/third-parties/google";
+import encodeWaText from "@/utils/whatsapp";
 
 const Footer = () => {
+    const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
 
     const gaEvent = () => {
         sendGAEvent('event', 'Whatsapp Button', {
@@ -51,7 +53,7 @@ const Footer = () => {
                                 text="WhatsApp: "
                                 extraClass="!font-normal text-xs text-white"
                             />
-                            <Link onClick={gaEvent} href={`https://wa.me/6281288211755`}>
+                            <Link onClick={gaEvent} href={`https://wa.me/6281288211755/?text=${waText}`}>
                                 <SecondaryText
                                     text="0812-8821-1755"
                                     extraClass="!font-normal !text-xs md:!text-base text-green underline"

@@ -3,9 +3,13 @@ import SecondaryText from "../components/shared/SecondaryText/SecondaryText";
 import MainText from "../components/shared/MainText/MainText";
 import ContactUsButton from "../components/shared/ContactUsButton/ContactUsButton";
 import ContactUsAnimation from "../components/shared/ContactUsAnimation/ContactUsAnimation";
+import encodeWaText from "../../utils/whatsapp";
 import Link from "next/link";
 
 export default function AboutUs() {
+
+    const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
+
     return (
         <main className="py-16">
             <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row md:items-end gap-10 mt-30 px-10">
@@ -34,7 +38,7 @@ export default function AboutUs() {
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 !py-3 !px-6"
-                    link="https://wa.me/6281281797771"
+                    link={`https://wa.me/6281288211755/?text=${waText}`}
                 />
                 
                 <MainText
@@ -44,7 +48,7 @@ export default function AboutUs() {
                 <ContactUsButton
                     text="HUBUNGI SEKARANG"
                     extraClass="w-full max-w-sm mt-2 text-sm !py-3 !px-6"
-                    link="https://wa.me/6281288211755"
+                    link={`https://wa.me/6281288211755/?text=${waText}`}
                 />
 
             </div>

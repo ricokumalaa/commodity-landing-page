@@ -1,8 +1,11 @@
 import ContactUsButton from "../../shared/ContactUsButton/ContactUsButton";
 import MainText from "../../shared/MainText/MainText";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
+import encodeWaText from "@/utils/whatsapp";
 
 const HeroBanner = () => {
+    const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
+    
     return (
         <div className="relative pt-16 min-h-screen bg-[url(/images/hero-banner.png)] bg-cover bg-center bg-no-repeat">
             <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-black/50"></div>
@@ -26,7 +29,7 @@ const HeroBanner = () => {
                     <div data-aos="zoom-in" data-aos-delay="400">
                         <ContactUsButton 
                             text="CEK SEKARANG"
-                            link="https://wa.me/6281288211755"
+                            link={`https://wa.me/6281288211755/?text=${waText}`}
                         />
                         <div className="flex items-center gap-2 px-1 mt-1">
                             <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>

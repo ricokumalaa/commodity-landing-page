@@ -2,6 +2,7 @@ import Image from "next/image";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
 import MainText from "../../shared/MainText/MainText";
 import ContactUsButton from "../../shared/ContactUsButton/ContactUsButton";
+import encodeWaText from "@/utils/whatsapp";
 
 interface cardsProps{
     title: string;
@@ -15,6 +16,8 @@ interface cardsProps{
 }
 
 const TertiaryCatalogueCard = ({ title, subTitle, icon: Icon, dataAos, imageName, alt="", descTitle, descBody}: cardsProps) => {
+    const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
+
     return (
         <div className="w-full max-w-md mx-auto rounded-lg bg-[var(--foreground)] overflow-hidden">
             <div className="relative w-full aspect-[4/3]">
@@ -61,7 +64,7 @@ const TertiaryCatalogueCard = ({ title, subTitle, icon: Icon, dataAos, imageName
                 <div className="flex flex-col mt-2 p-1">
                     <ContactUsButton
                         text="REQUEST SAMPLE SEKARANG"
-                        link="https://wa.me/6281281797771"
+                        link={`https://wa.me/6281281797771/?text=${waText}`}
                     />
                 </div>
 

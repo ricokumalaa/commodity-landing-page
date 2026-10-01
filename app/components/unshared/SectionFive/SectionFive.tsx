@@ -1,8 +1,11 @@
 import SecondaryContactUsButton from "../../shared/SecondaryContactUsButton/SecondaryContactUsButton";
 import MainText from "../../shared/MainText/MainText";
 import SecondaryText from "../../shared/SecondaryText/SecondaryText";
+import encodeWaText from "@/utils/whatsapp";
 
 const SectionFive = () => {
+    const waText = encodeWaText({text: "Halo Mitra Bumi Organik, Boleh saya minta price list produknya?"});
+
     return(
         <div className="py-20 w-full px-10 flex flex-col justify-center items-center gap-y-15 bg-[var(--foreground)] text-center">
             
@@ -32,7 +35,7 @@ const SectionFive = () => {
                 />
                 <SecondaryContactUsButton 
                     text="CEK SEKARANG"
-                    link="https://wa.me/6281281797771"
+                    link={`https://wa.me/6281281797771/?text=${waText}`}
                 />
             </div>
 
